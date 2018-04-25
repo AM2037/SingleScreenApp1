@@ -51,7 +51,7 @@
 
     <TextView
         android:id="@+id/city_text_view"
-        android:text="@string/address2"
+        android:text="@string/website"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/padding"
