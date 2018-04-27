@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context="com.example.android.smallbusinessapp.MainActivity">
-
 
     <ImageView
         android:id="@+id/robot_image_view"
         android:src="@drawable/mr_robot"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:scaleType="centerCrop" />
 
     <TextView
@@ -20,59 +19,166 @@
         android:text="@string/headline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:paddingTop="@dimen/padding"
         android:typeface="serif"
         android:textSize="@dimen/text1"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/name_text_view"
-        android:text="@string/store_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/padding"
-        android:typeface="serif"
-        android:textSize="@dimen/text2"
         android:textStyle="bold"
-        android:textColor=""
-        android:background="#9b2728" />
-
-    <TextView
-        android:id="@+id/street_text_view"
-        android:text="@string/address"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/padding"
-        android:typeface="serif"
-        android:textSize="@dimen/text2"
-        android:textStyle="bold"
-        android:textColor=""
-        android:background="" />
-
-    <TextView
-        android:id="@+id/city_text_view"
-        android:text="@string/website"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/padding"
-        android:typeface="serif"
-        android:textSize="@dimen/text2"
-        android:textStyle="bold"
-        android:textColor=""
-        android:background=""/>
+        android:textColor="#000000"
+        android:layout_below="@id/robot_image_view" />
 
 
-    <TextView
-        android:id="@+id/number_text_view"
-        android:text="@string/phone"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/services_offered"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:padding="@dimen/padding"
-        android:typeface="serif"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor=""
-        android:background="" />
+        android:orientation="vertical"
+        android:layout_below="@+id/slogan_text_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/padding3" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/services_title"
+            android:gravity="center"
+            android:textSize="@dimen/text2"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#363636"
+            android:padding="@dimen/padding"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/service1"
+            android:gravity="center"
+            android:textSize="@dimen/text2"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#363636"
+            android:padding="@dimen/padding"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/service1.2"
+            android:textSize="@dimen/text2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#363636"
+            android:padding="@dimen/padding"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/service2"
+            android:textSize="@dimen/text2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#363636"
+            android:padding="@dimen/padding"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/service3"
+            android:gravity="center"
+            android:textSize="@dimen/text2"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#363636"
+            android:padding="@dimen/padding"
+            android:typeface="serif" />
 
 
-</LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contact_info"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/slogan_text_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="@dimen/padding3" >
+
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:text="@string/store_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:typeface="serif"
+            android:textSize="@dimen/text2"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#363636" />
+
+        <TextView
+            android:id="@+id/street_text_view"
+            android:text="@string/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:typeface="serif"
+            android:textSize="@dimen/text2"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#363636" />
+
+        <TextView
+            android:id="@+id/city_text_view"
+            android:text="@string/address2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:typeface="serif"
+            android:textSize="@dimen/text2"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#363636" />
+
+        <TextView
+            android:id="@+id/web_text_view"
+            android:text="@string/website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:typeface="serif"
+            android:textSize="@dimen/text2"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#363636"/>
+
+
+
+        <TextView
+            android:id="@+id/number_text_view"
+            android:text="@string/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:typeface="serif"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#363636"
+            android:paddingBottom="@dimen/padding3"/>
+    </LinearLayout>
+</RelativeLayout>

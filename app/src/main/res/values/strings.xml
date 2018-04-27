@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">Small Business App</string>
-    <string name="store_name">Mr. Robot Computer Store</string>
+    <string name="store_name">Mr. Robot Tech</string>
     <string name="headline">Computer repair with a smile!</string>
-    <string name="address">1010 Arcade St. Brooklyn, NY</string>
+    <string name="services_title">Services we offer</string>
+    <string name="service1">Service and sell:</string>
+    <string name="service1.2">Laptops, PCS, phones</string>
+    <string name="service2">Replace hardware</string>
+    <string name="service3">Sell adapters/chargers</string>
+    <string name="address">1010 Arcade St.</string>
+    <string name="address2">Brooklyn, NY</string>
     <string name="phone">1–800-eff-society</string>
-    <string name="website">https://www.mrrobotsmiles.com</string>
+    <string name="website">www.mrrobot.com</string>
     <string name="email">fsociety@gmail.com</string>
 </resources>
